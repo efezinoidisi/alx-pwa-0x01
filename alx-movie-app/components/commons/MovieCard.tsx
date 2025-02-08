@@ -6,13 +6,12 @@ const MovieCard: React.FC<MovieProps> = ({
   posterImage,
   releaseYear,
 }) => {
-  
   return (
     <div className='h-[563px]'>
       <div>
         <Image
           className='h-[430px] w-full rounded-md hover:cursor-pointer'
-          src={posterImage}
+          src={posterImage || '/stock.jpg'}
           width={100}
           height={100}
           alt={title}
